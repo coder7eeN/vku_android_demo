@@ -1,6 +1,8 @@
 package com.example.vku_demo.ui
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +13,7 @@ import kotlin.random.Random
 class MainActivity : AppCompatActivity() {
     private lateinit var personAdapter: PersonAdapter
     private lateinit var rvPerson: RecyclerView
+    private lateinit var btnOpenSecond: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,10 +21,12 @@ class MainActivity : AppCompatActivity() {
         initView()
         initAdapter()
         initRecycler()
+        openSecondScreen()
     }
 
     private fun initView() {
         rvPerson = findViewById(R.id.rvPerson)
+        btnOpenSecond = findViewById(R.id.btnOpenScreen)
     }
 
     private fun initAdapter() {
@@ -39,5 +44,13 @@ class MainActivity : AppCompatActivity() {
     private fun initRecycler() {
         rvPerson.layoutManager = LinearLayoutManager(this)
         rvPerson.adapter = personAdapter
+    }
+
+    private fun openSecondScreen(value: String = "123456789") {
+        btnOpenSecond.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra(SecondActivity.KEY_PHONE_VALUE, value)
+            startActivity(intent)
+        }
     }
 }
