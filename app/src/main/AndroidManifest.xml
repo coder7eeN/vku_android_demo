@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Vku_demo">
+
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.gretting.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +20,5 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.SecondActivity" />
     </application>
-
 </manifest>

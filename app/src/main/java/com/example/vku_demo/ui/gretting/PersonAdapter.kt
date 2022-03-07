@@ -1,4 +1,4 @@
-package com.example.vku_demo.ui
+package com.example.vku_demo.ui.gretting
 
 import android.view.LayoutInflater
 import android.view.View

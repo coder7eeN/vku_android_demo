@@ -1,4 +1,4 @@
-package com.example.vku_demo.ui
+package com.example.vku_demo.ui.gretting
 
 import android.content.Intent
 import android.os.Bundle
