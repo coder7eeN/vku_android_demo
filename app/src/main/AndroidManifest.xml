@@ -13,6 +13,11 @@
         <activity
             android:name=".ui.gretting.MainActivity"
             android:exported="true">
+
+        </activity>
+
+        <activity android:name=".ui.newspaper.NewsActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
