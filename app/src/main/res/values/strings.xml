@@ -3,4 +3,11 @@
     <string name="button_navigate_screen_second_text">Open screen 2</string>
 
     <string name="label_back">Back</string>
+
+    <!--Exam-->
+    <string name="label_hint_name">Name</string>
+    <string name="label_hint_email">Email</string>
+    <string name="label_hint_phone">Phone</string>
+    <string name="label_login_button">Login</string>
+
 </resources>
